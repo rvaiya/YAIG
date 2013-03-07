@@ -13,6 +13,10 @@ Dependencies:
 Installation:
 
 	Move src/pictures.cgi to a directory containing image files, and access it in the browser
-	(ensure that the directory is writable by the process running the CGI process.)
+	(ensure that the directory is writable by the user running the CGI process.)
+
+Demo:
+
+	To see what the script looks like see "http://csclub.uwaterloo/~rvaiya/piclistdemo"
 
 
