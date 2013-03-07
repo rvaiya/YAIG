@@ -1,0 +1,18 @@
+Purpose:
+
+	A simple way to preview and view image files in a web directory.
+	
+Dependencies:
+
+	The script requires vanilla perl (no extra modules needed)
+	and imagemagick to be installed on the server 
+	(convert must be available). 
+
+	*The directory must also be writable by the user which owns the CGI process*.
+
+Installation:
+
+	Move src/pictures.cgi to a directory containing image files, and access it in the browser
+	(ensure that the directory is writable by the process running the CGI process.)
+
+
