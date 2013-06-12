@@ -60,8 +60,9 @@ print << 'HERE'
 					if(imgname.length == 0)
 						alert("Image not found");
 					else {
-						$('#mpic').slideDown();
-						$('#mpic  img').attr('src', imgname);
+						var img=$('#mpic img');
+						img.attr('src', imgname);
+						img.load(function() { $('#mpic').slideDown(); });
 					}
 				});
 			}); 
@@ -72,25 +73,26 @@ print << 'HERE'
 	</script>
 	<style type="text/css" media="screen">
 		#mpic {
-			z-index:998;
-			position:absolute;
-			top:0;
-			left:0;
-			height:10000px;
+			position:fixed;
+			top:0px;
+			left:0px;
+			height:100%;
 			width:100%;
-			background:black;
-			opacity:1;
+			background-color: black;
+			padding-top:5%;
 		}
-		#mpic img{
-			height:700px;
+
+		#mpic img {
+			position:relative;
+			height:80%;
 		}
 
 		#main {
 			width:700px;
 			margin-left:auto;
 			margin-right:auto;
-			border:1px solid grey;
 		}
+
 		.thumbnail {
 			width:100px;
 			margin:10px;
