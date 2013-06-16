@@ -1,0 +1,3 @@
+The front-end code (base.html) and generation code (gengal.pl) are kept separate
+for development purposes. If you wish to run the tool, use the standalone
+"gengal.pl" in the bin folder.

@@ -1,22 +1,23 @@
 Purpose:
 
-	A simple way to preview and view image files in a web directory.
+	A script which generates a simple html image gallery. Uses css3 transformations and
+	animations for the loading glyph, and pure javascript (no jQuery) for image
+	loading/event handling.
 	
 Dependencies:
 
 	The script requires vanilla perl (no extra modules needed)
-	and imagemagick to be installed on the server 
-	(convert must be available). 
+	and the convert binary of image magick to be in the path.
 
-	*The directory must also be writable by the user which owns the CGI process*.
-
-Installation:
-
-	Move src/pictures.cgi to a directory containing image files, and access it in the browser
-	(ensure that the directory is writable by the user running the CGI process.)
+Usage:
+	
+	Make "bin/gengal.pl" executable and run it from a directory containing image
+	files. Redirect the output to the desired gallery page. 
+	
+	E.g "./gengal.pl > index.html"
 
 Demo:
 
-	To see what the script looks like visit "http://csclub.uwaterloo.ca/~rvaiya/piclistdemo"
+	To see what the script looks like visit "http://csclub.uwaterloo.ca/~rvaiya/yaigdemo"
 
 
