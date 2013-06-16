@@ -1,13 +1,13 @@
-Purpose:
+Description:
 
-	A script which generates a simple html image gallery. Uses css3 transformations and
-	animations for the loading glyph, and pure javascript (no jQuery) for image
-	loading/event handling.
+	A script which generates a simple html image gallery using css3
+	transformations and animations for the loading glyph, and pure javascript
+	(no jQuery) for image loading/event handling.
 	
 Dependencies:
 
-	The script requires vanilla perl (no extra modules needed)
-	and the convert binary of image magick to be in the path.
+	The script requires vanilla perl (no extra modules needed) and the convert
+	binary of image magick to be in the path.
 
 Usage:
 	
@@ -18,6 +18,6 @@ Usage:
 
 Demo:
 
-	To see what the script looks like visit "http://csclub.uwaterloo.ca/~rvaiya/yaigdemo"
+	To see a sample gallery visit "http://csclub.uwaterloo.ca/~rvaiya/yaigdemo"
 
 
